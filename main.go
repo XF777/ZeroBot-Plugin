@@ -98,12 +98,12 @@ func init() {
 	w := flag.Bool("w", false, "Enable warning level log and higher.")
 	h := flag.Bool("h", false, "Display this help.")
 	// 解析命令行参数，输入 `-g 监听地址:端口` 指定 gui 访问地址，默认 127.0.0.1:3000
-	// g := flag.String("g", "127.0.0.1:3000", "Set web gui listening address.")
+	// g := flag.String("g", "127.0.0.1:8100", "Set web gui listening address.")
 
 	// 直接写死 AccessToken 时，请更改下面第二个参数
 	token = flag.String("t", "", "Set AccessToken of WSClient.")
 	// 直接写死 URL 时，请更改下面第二个参数
-	url = flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
+	url = flag.String("u", "ws://127.0.0.1:8200", "Set Url of WSClient.")
 	// 默认昵称
 	adana = flag.String("n", "椛椛", "Set default nickname.")
 	prefix = flag.String("p", "/", "Set command prefix.")
